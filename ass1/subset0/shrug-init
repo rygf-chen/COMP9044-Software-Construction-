@@ -1,0 +1,17 @@
+#!/bin/dash
+
+# get the input
+filename=$1
+# check .shrug exists or not
+if [ $filename -e ".shrug" ]
+then
+    echo "shrug-init: error: .shrug already exists"
+else
+    # create floders and files
+    mkdir '.shrug'
+    touch  ".shrug/.log"
+    # touch -c ".shrug/shrug-branch.txt"
+    mkdir '.shrug/index'
+    mkdir '.shrug/branch'
+    echo "Initialized empty shrug repository in .shrug"
+fi

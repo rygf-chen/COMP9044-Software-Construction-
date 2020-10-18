@@ -1,0 +1,22 @@
+Date        Time Range        Activity                  Comments  
+
+09/07/20.   15:30-16:30       coding                    1.finished: subset0 shrug-init,shrug-add
+                                                        2.confused in shrug-commit
+
+09/07/20.   17:30-18:30       coding&debuging           1.finished: subset0 shrug-commit,shrug-log
+
+09/07/20    19:00-19:50       coding&debuging           1.forgot creating commit floder in shrug-commit
+                                                        2.finished: subset0 shurg-log, shurg-show
+
+09/07/20    20:30-23:30       coding&debuging	        1.shrug-show: get stderr from autotest shubset0
+                                                        2.met a bug that cannot create extra files in shrug-init
+                                                        3.shrug-add: get stderr from autotest shubset0
+
+10/07/20    10:00-13:30       debuging                  1.shrug-init: get reply from Forum to solve the problem that cannot create 
+                                                          extra files. Create extra files in .shrug (.log)
+                                                        2.shrug-commit: get stderr from autotest shubset0
+                                                        3.shrug-commit: confused in 'nothing to commit'
+                                                        4.shrug-commit: get reply from Forum to solve the problem(nothing to commit).
+                                                          Compare the number of all files and the number of same files.
+
+                                                        

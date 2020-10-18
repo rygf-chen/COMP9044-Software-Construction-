@@ -1,0 +1,57 @@
+Date        Time Range        Activity                  Comments  
+01/08/20    16:00-17:00       Coding                    1. Read files from STDIN.
+                                                        2. #!/bin/dash: token from lecture.
+                                                        3. echo: token from lecture.
+                                                        4. =: 1). a=hello -> $a = 'hello' 
+                                                              2). start=$1 -> $start = $ARGV[0] 
+                                                              3). number=$start -> $number = $start
+
+01/08/20    22:00-23:00       Coding&Debuging           1. ls,pwd,id,date
+                                                        errors: match 'id' in a sentence e.g.(echo 'Thou shalt remain, in midst of other woe')
+                                                        solution: add ^ in match(=~ /^id(.*)/)
+                                                        2. finished subset0
+
+03/08/20    10:00-13:00       Coding&Debuging           1. for loop: 1). check integers and strings in first statement
+                                                                     2). delete do
+                                                                     3). transfer done into }
+                                                        2. found a bug: '   number=$start' -> '$    number = $start'
+                                                           solution: add \s* to find spaces
+
+03/08/20    14:00-16:30       Coding&Debuging           1. finished subset 1.
+                                                        2. echo: 1). add $1 -> $ARGV[0];
+                                                                 2). add echo 'a' -> print "a";
+                                                        bugs: cannot match "" in ''.
+                                                        solution: check " in ' and add \ in front of " to ensure perl programs are correct.
+                                                        3. echo:  '"Beauty is truth, truth beauty",  -  that is all' ->   "\"Beauty is truth, truth beauty\",  -  that is all\n";                                         
+                                                        4. if: 1). test a = b -> ('a' eq 'b'){
+                                                               2). delete then
+                                                               3). elif -> } elsif {
+                                                               4). else -> } else {                               
+                                                               5). fi -> }
+                                                        5. finished subset 2.
+
+03/08/20    17:00-19:30        Coding&Debuging          1. echo: add "aa" -> "aa\n";
+                                                        2. if: 1). changed [] into test, in order to reduce codes.
+                                                               2). check the situation that there are just 2 statements after test.
+                                                                    eg: test -r /dev/null -> (-r '/dev/null') {
+                                                               3). while loop: 1). -le -> <=
+                                                                               2). -lt -> <
+                                                                               3). -eq -> ==
+                                                                               4). -gt -> >
+                                                                               5). -ge -> >=
+                                                                               6). [] -> test, in order to reduce codes
+                                                               4). =: 1). add a situation that there are back quotes in '=' sentence.
+                                                                          eg: number=`expr $number + 1` ->  $number = $number + 1;
+                                                        3. add a function that change $@ to @ARGV.
+
+03/08/20     20:00-20:30        Writing test.sh         1. found a bug in for loop: forgot initializing @changed and $string.
+                                                        solution: initialized @changed and $string.
+
+03/08/20     20:35-21.30        Debuging                1. found a bug in if: if [ $start -le $finish ]  ->  if ('$start' <= '$finish'){
+                                                        solution: check $ in '', and remove '' when program found there is a $ in ''.
+
+08/08/20     14:00-17:00        Writing demo.sh         1. found a bug while writing demo04.sh: if [ $input -lt 0 ] -> if ('$input' < '0')
+                                &Debuging               solution: check the statement around comparison operators, if it contains digits, then remove ''
+                                                        2. number=$((number + 1)) -> number=`expr $number + 1`: aims to reduce codes
+
+08/08/20     22:00-22:30        Coding                  1. add $*

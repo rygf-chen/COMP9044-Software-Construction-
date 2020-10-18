@@ -1,0 +1,9 @@
+﻿n=0
+
+while test $n -lt 3
+do
+        ls -l >input|cut -d ':' -f2 input |cut -d ' ' -f2 | egrep -i '[a-z]' | egrep -v 'data'| egrep -v 'input' >data
+        n=$(expr $n + 1)
+done
+
+for

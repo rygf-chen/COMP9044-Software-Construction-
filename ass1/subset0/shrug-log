@@ -1,0 +1,4 @@
+#!/bin/dash
+
+a=`cat .shrug/.log|sort -r`
+echo "$a"

@@ -1,0 +1,21 @@
+#!/bin/dash
+
+path=".shrug/index"
+
+for file in $path/*
+do
+    file=`echo "$file"|cut -d '/' -f3`
+    if [ -e ".shrug/branch/$file" ]
+    then
+        echo "xxxxx"
+        diff "$path/$file" ".shrug/branch/$file" >/dev/null
+        if [ $? != 0 ]
+        then
+            echo "nothing to commit"
+            exit 1
+
+        fi
+    fi
+done
+
+echo "aaaa"

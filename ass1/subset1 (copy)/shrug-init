@@ -1,0 +1,22 @@
+#!/bin/dash
+
+# edit by Jie CHEN, z5236591
+# started at 15:30 09/07/20
+# modified in 10:00 10/07/20: store .log into .shrug, otherwise it will show an error: unexpected file
+
+
+# get the input
+filename=$1
+# check .shrug exists or not
+if [ $filename -e ".shrug" ]
+then
+    echo "shrug-init: error: .shrug already exists"
+else
+    # create floders and files
+    mkdir '.shrug'
+    touch  ".shrug/.log"
+    # touch -c ".shrug/shrug-branch.txt"
+    mkdir '.shrug/index'
+    mkdir '.shrug/branch'
+    echo "Initialized empty shrug repository in .shrug"
+fi
