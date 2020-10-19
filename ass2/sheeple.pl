@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+!/usr/bin/perl -w
 
-# z5236591 Jie Chen
+# z5236591 Jie
 # started at 01/08/20 16:00
 
 # read files from STDIN

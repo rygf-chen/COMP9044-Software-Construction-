@@ -1,7 +1,0 @@
-line a
-line b
-line c
-#7
-line d
-#2
-line e

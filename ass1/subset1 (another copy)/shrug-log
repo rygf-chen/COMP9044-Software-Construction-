@@ -1,8 +1,0 @@
-#!/bin/dash
-
-# edit by Jie CHEN, z5236591
-# started at 18:00 09/07/20
-
-# get all the diaries from .log and print it in a reversed way
-a=`cat .shrug/.log|sort -r`
-echo "$a"
